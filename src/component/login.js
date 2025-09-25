@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../App.css";
 function PreventForm() {
     const [value, setValue] = useState("");
     const [result, setResult] = useState("");

@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import './App.css';
-import login from "./component/login";
-import signUp from "./component/signUp";
+import Login from "./component/login";
+import SignUp from "./component/signUp";
 function App() {
   return (
     <Router>
@@ -10,16 +10,16 @@ function App() {
 <nav>
   <ul>
     <li>
-      <link to="/">Login</link>
+      <Link to="/">Login</Link>
     </li>
     <li>
-      <link to="/signUp"></link>
+      <Link to="/SignUp">Sign Up</Link>
     </li>
   </ul>
 </nav>
 <Routes>
-  <Route exact="true" path='/' element={<login />}></Route>
-  <Route path='/signUp' element={<signUp />}></Route>
+  <Route exact="true" path='/' element={<Login />}></Route>
+  <Route path='/SignUp' element={<SignUp />}></Route>
 </Routes>
     </div>
     </Router>
