@@ -27,7 +27,8 @@ function PreventForm() {
             <form onSubmit={handleSubmit}>
                 <label className='label' htmlFor="emailField">
                     E-mail:</label><br/>
-                    <input type="email" pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' value={value} onChange={handleChange} required /><br/>
+                    <input type="email" 
+ value={value} onChange={handleChange} required /><br/>
 
                 <label className='label' htmlFor="pwd">Password:</label> <br/> <input type="password" minLength="6" required /><br/>
 
